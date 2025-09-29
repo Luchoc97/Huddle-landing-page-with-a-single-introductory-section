@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    position: relative;
+    background-image: url(../images/bg-desktop.svg);
+    background-color: #674baf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.contenido{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenido .imagenes{
+    width: 60%;
+    padding: 0 30px;
+}
+.contenido .imagenes .logo{
+    width: 25%;
+    margin-bottom: 50px;
+}
+.contenido .imagenes .mockups{
+    width: 100%;
+}
+.contenido .informacion{
+    width: 40%;
+    padding: 20px;
+}
+.contenido .informacion .titulo, .contenido .informacion .parrafo{
+    color: #fff;
+}
+.contenido .informacion .registro{
+    background-color: #fff;
+    color: #674baf;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 40px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-decoration: none;
+    box-shadow: 10px 10px 31px 2px rgba(0,0,0,0.36);
+}
+.contenido .registro:hover{
+    color: #fff;
+    background-color: #e882e8;
+}
+.contenido .redesSociales{
+    position: absolute;
+    text-align: end;
+    bottom: 8%;
+    right: 8%;
+}
+.contenido .redesSociales .redes{
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 50%;
+}
+.contenido .redesSociales .twitter{
+    margin: 0 15px;
+}
+.contenido .redesSociales .redes:hover{
+    color: #e882e8;
+    border: 1px solid #e882e8;
+}
+@media (max-width: 1024px){
+    .contenido{
+        width: 70%;
+        flex-direction: column;
+    }
+    .contenido .imagenes, .contenido .informacion{
+        width: 90%;
+    }
+    .contenido .informacion, .contenido .redesSociales{
+        text-align: center;
+    }
+    .contenido .redesSociales{
+        position: relative;
+        right: 0;
+        margin: 80px auto 0 auto;
+    }
+    .contenido .informacion .registro{
+        padding: 10px 80px;
+    }
+}
+@media (max-width: 767px){
+    .contenido{
+        width: 90%;
+    }
+    .contenido .informacion .registro{
+        padding: 10px 100px;
+    }
+}
+@media (max-width: 480px){
+    .contenido{
+        width: 100%;
+        padding: 0 20px;
+    }
+    .contenido .informacion{
+        margin-top: 60px;
+    }
+    .contenido .imagenes, .contenido .informacion{
+        padding: 0 10px;
+    }
+    .contenido .informacion .registro{
+        padding: 10px 120px;
+    }
+}
