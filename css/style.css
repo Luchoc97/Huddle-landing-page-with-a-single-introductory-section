@@ -35,6 +35,9 @@ body{
     width: 40%;
     padding: 20px;
 }
+.contenido .informacion .parrafo {
+    margin-bottom: 25px;
+}
 .contenido .informacion .titulo, .contenido .informacion .parrafo{
     color: #fff;
 }
@@ -114,4 +117,5 @@ body{
     .contenido .informacion .registro{
         padding: 10px 120px;
     }
+
 }
